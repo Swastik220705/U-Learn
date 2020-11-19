@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+}
+body{
+  background-image: url(9.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 45px;
+}
+#classes{
+  justify-content: center;
+}
+.classes{
+  list-style: none;
+}
+.class h5{
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'ubuntu',sans-serif;
+}
+.class ul{
+  display: flex;
+  list-style: none;
+}
+.subject{
+  justify-content: center;
+}
+.class ul a{
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(59, 59,59);
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'ubuntu',sans-serif;
+}
+.class ul a:hover{
+  color: rgb(197,194,194);
+}
+.class ul button{
+  cursor: pointer;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.drop-btn {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color:rgb(59,59,59);
+  font-size: 30px;
+  font-family: 'ubuntu',sans-serif;
+}
+.drop-btn:hover {
+  color: rgb(197, 194, 194);
+}
+/* The container <div> - needed to position the dropdown content */
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.drop-down-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.drop-down .drop-down-content a {
+  font-size: 20px;
+  color: rgb(59, 59,59);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s;
+}
+
+/* Change color of dropdown links on hover */
+.drop-down-content a:hover {
+    color: rgb(197, 194, 194);
+}
+
+/* Show the dropdown menu on hover */
+.drop-down:hover .drop-down-content {
+  display: block;
+transition: 1s ease-in;
+}

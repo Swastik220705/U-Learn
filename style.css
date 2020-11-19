@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width:39%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    
+}
+
+.nav-list{
+    width: 70%; 
+    display: flex; 
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{ 
+    color: rgb(197, 194, 194);
+}
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      color: rgb(197, 194, 194);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    color: rgb(197, 194, 194);
+  }
+
+.rightNav{ 
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+form{
+    position: relative;
+    margin-top: auto;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 15px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7)url(5.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+        height: 80%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%; 
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 41px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px; 
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.btn-dark{
+    color: black;
+        border: 2px solid grey;
+
+}
+.section{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+.aboutus{
+    display: block;
+    padding-top: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+.aboutus h3{
+    padding-top: 25px;
+    font-size: 30px;
+}
+.about{
+    display: flex;
+}
+.about ul{
+    list-style: none;
+    font-size: 20px;
+}
+.yash{
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+.swastik{
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+.swastik li{
+    font-size: 30px;
+}
+.swastik li img{
+    width: 100px;
+}
+.yash li{
+    font-size: 30px;
+}
+.yash li img{
+    width: 100px;
+}
+#categories
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(4.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef! important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#categories h1
+{
+    text-align: center;
+    color: #efefef ! important;
+    font-size: 30px;
+    padding-bottom: 10px; 
+    font-family: ubuntu,sans-serif;
+}
+#categories h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 300px;
+    margin: 20px auto 5px;
+}
+.row a{
+    text-decoration: none;
+    color: white;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row h5{
+    font-size: 16px;
+}
+.icon img{
+    width: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.categories .col-md-3:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    cursor: pointer;
+    transition: 0.7s;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 833px;
+}
+.text-center{
+
+    text-align: center;
+    padding-top: 30px;
+   font-family: 'Ubuntu', sans-serif;
+       font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%; 
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+   font-family: 'Ubuntu', sans-serif; 
+   display: flex;
+   justify-content: center;
+   color: white;
+   
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
